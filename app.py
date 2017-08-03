@@ -7,6 +7,8 @@ app = Flask(__name__)
 CORS(app)
 
 s = SteemData()
+
+#Show only Posts no older than 29 days 
 time_constraints = {
     '$gte': dt.datetime.now() - dt.timedelta(days=28)}
 
