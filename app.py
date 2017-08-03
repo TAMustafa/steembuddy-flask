@@ -8,7 +8,7 @@ CORS(app)
 
 s = SteemData()
 
-#Show only Posts no older than 29 days 
+#Show only user who posted within the last 29 days 
 time_constraints = {
     '$gte': dt.datetime.now() - dt.timedelta(days=28)}
 
